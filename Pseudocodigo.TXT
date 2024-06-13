@@ -1,0 +1,46 @@
+Diagrama de Flujo o pseudocódigo: 
+Proceso Reciclar 
+Inicio 
+Variables 
+char : nombre , cedula , Continuar 
+double : plasolat , palocar , vidrio , puntos , kilosmaterial 
+int : material 
+escribir “Bienvenido querido usuario” 
+escribir "Ingrese su nombre: " 
+leer nombre 
+escribir "Ingrese su numero de cedula: " 
+leer cedula 
+escribir “Hola” nombre 
+mientras verdadero 
+mientras verdadero 
+		escribir “¿Que desea reciclar el dia de hoy? 
+			    (Plástico o Latas - 1) 
+			    (Papel o Cartón - 2) 
+                            (Vidrio - 3) 
+		leer material 
+		si material >= 1 y material <= 3 = falso 
+			sino escribir "Material no valido, favor de ingresar un valor entre 1 y 3." 
+mientras verdadero 
+		escribir "¿Cuantos kilos de material va a reciclar? " 
+		leer kilosmaterial 
+		si kilosmaterial > 0 = falso 
+			sino escribir "No puedes ingresar una cantidad menor a 0, favor ingresar un valor mayor" 
+en caso de material 
+=1 plasolat=plasolat+kilosmaterial 
+   puntos=puntos+(kilosmaterial*100) 
+=2 palocar=palocar+kilosmaterial 
+   puntos=puntos+(kilosmaterial*100) 
+=3 vidrio=vidrio+kilosmaterial 
+   puntos=puntos+(kilosmaterial*150) 
+escribir “¿Desea ingresar mas material? (s/n): ” 
+leer  Continuar
+si Continuar != 's' y Continuar != 'S' =falso
+escribir "Comprobante"
+escribir "Nombre:" nombre
+escribir "Cedula:" cedula
+escribir "Cuantos kilos de plastico y latas:" plasolat
+escribir "Cuantos kilos de papel y carton:" palocar
+escribir "Cuantos kilos de vidrio:" vidrio
+escribir "Puntos recibidos:" puntos
+escribir "Favor presentar su comprobante en nuestra sucursal mas cercana a ud para reclamar sus puntos oficilamente, Muchas Gracias por usar nuestra app :), Recuerda siempre cuidar el medio ambiente"
+Fin
